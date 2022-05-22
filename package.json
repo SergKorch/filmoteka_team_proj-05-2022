@@ -6,22 +6,19 @@
   "homepage": "https://sergkorch.github.io/filmoteka_team_proj2022",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka_team_proj2022/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "parcel build src/*.html --public-url /filmoteka_team_proj2022/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergkorch/filmoteka_team_proj2022.git"
+    "url": "git+https://sergkorch.com/cheestick/filmoteka_team_proj2022.git"
   },
   "keywords": [],
-  "author": "SKorchemkin <skorchemkin1987@gmail.com>",
+  "author": "Serhii Korchemkin <skorchemkin1987@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sergkorch/filmoteka_team_proj2022/issues"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
