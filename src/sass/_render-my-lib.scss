@@ -1,0 +1,116 @@
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+a {
+  text-decoration: none;
+}
+
+.library_section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $modal-window-background-color;
+  @media screen and (min-width: 766px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.library_contant {
+  display: block;
+
+  @media screen and (min-width: 766px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1023px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.library_card {
+  @media screen and (max-width: 765px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 766px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1023px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+.library_card:last-child {
+  @media screen and (max-width: 765px) {
+    margin-bottom: 0;
+  }
+}
+.library_link {
+  display: block;
+}
+.library__photo {
+  width: max-content;
+}
+.library__photo-contant {
+  border-radius: 5px;
+}
+.library__photo {
+  width: 100%;
+}
+
+.library__contant-block {
+  width: 274px;
+  padding-top: 10px;
+}
+.library__contant-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.library__contant-discription-block {
+  display: flex;
+  align-items: baseline;
+}
+.library__contant-discription {
+  margin: 0;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  color: $accent-background;
+}
+.library__contant-rating-container {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  width: 36px;
+  height: 16px;
+  left: 194px;
+  top: 713px;
+
+  background: $accent-background;
+  border-radius: 5px;
+}
+.library__contant-rating {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $header-text-color;
+}

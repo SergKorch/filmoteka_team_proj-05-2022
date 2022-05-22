@@ -1,0 +1,116 @@
+.main-section {
+  min-width: $mobile-bp;
+  padding: 20px 20px 40px;
+  flex-grow: 1;
+
+  background-color: $modal-window-background-color;
+
+  @media screen and (min-width: $tablet-bp) {
+    padding: 60px 32px;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    padding: 32px 32px 60px;
+  }
+}
+
+.main-gallery-lisnichyi {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0;
+    margin: -16px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: -16px -8px;
+  }
+}
+
+.card__container {
+  border-radius: $corner-radius;
+  min-height: 443px;
+  width: 280px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 495px;
+    margin: 16px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 309px;
+    height: 489px;
+    margin: 16px 8px;
+  }
+  &:hover {
+    animation: animateCard 3000ms infinite 250ms;
+    box-shadow: 5px 10px 15px 5px rgba(85, 85, 85, 0.2);
+  }
+}
+@keyframes animateCard {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card__picture {
+  display: flex;
+  margin-bottom: 8px;
+  width: 100%;
+  border-radius: $corner-radius;
+  height: 402px;
+  object-fit: cover;
+  object-position: center;
+
+  @media screen and (min-width: 768px) {
+    // width: 336px;
+    height: 455px;
+  }
+  @media screen and (min-width: 1024px) {
+    // width: 309px;
+    height: 449px;
+  }
+}
+
+.card__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $body-text-color;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+
+  &--name {
+    text-transform: uppercase;
+  }
+
+  &--genres {
+    color: $accent-background;
+    display: flex;
+    align-content: center;
+  }
+}
+
+.card__filmRaiting {
+  color: $header-text-color;
+  background-color: $accent-background;
+  display: inline-block;
+  text-align: center;
+  height: 16px;
+  width: 36px;
+  border-radius: $corner-radius;
+  margin-left: 8px;
+}
