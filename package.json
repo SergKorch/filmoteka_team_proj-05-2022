@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheestick/filmoteka.git"
+    "url": "git+https://github.com/sergkorch/filmoteka_team_proj2022.git"
   },
   "keywords": [],
-  "author": "Maksym Chystiakov <maksym.chystiakov@gmail.com>",
+  "author": "SKorchemkin <skorchemkin1987@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cheestick/filmoteka/issues"
+    "url": "https://github.com/sergkorch/filmoteka_team_proj2022/issues"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
